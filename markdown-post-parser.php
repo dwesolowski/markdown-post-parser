@@ -54,12 +54,12 @@ class MarkdownPostParser {
 
     public function errorLogger() {
 
+        $post = get_post();
         $message = sprintf ( __( 'Parsing post: %s' ), $post->ID );
         error_log(  __CLASS__ . ": " . $message );
     }
 
     public function parseDown( $markdown ) {
-        $post = get_post();
 
         if ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) {
             $this->errorLogger();
