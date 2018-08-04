@@ -31,8 +31,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // exit if accessed directly!
 }
 
-define( 'PLUGINVERSION', '1.0.0' );
-
 /**
  * - Parsedown 1.7.1
  * - ParsedownExtra 0.7.1
